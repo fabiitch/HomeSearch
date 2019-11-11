@@ -1,4 +1,4 @@
-include 'desktop', 'android', 'ios', 'core', ':NztGMaps', ':NztGdx'
+include 'desktop', 'android', 'ios', 'core', ':GdxMaps', ':NztGdx'
 
-project(':NztGMaps').projectDir = new File(settingsDir, '../NztGMaps')
+project(':GdxMaps').projectDir = new File(settingsDir, '../GdxMaps')
 project(':NztGdx').projectDir = new File(settingsDir, '../NztGdx')

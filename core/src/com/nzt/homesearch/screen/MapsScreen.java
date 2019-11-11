@@ -3,6 +3,7 @@ package com.nzt.homesearch.screen;
 import com.badlogic.gdx.graphics.Texture;
 import com.nzt.gdx.archi.AbstractMain;
 import com.nzt.gdx.screen.BaseScreen;
+import com.nzt.gmaps.GMaps;
 
 public class MapsScreen extends BaseScreen {
 
@@ -10,6 +11,7 @@ public class MapsScreen extends BaseScreen {
 	public MapsScreen(AbstractMain main) {
 		super(main);
 		img = new Texture("badlogic.jpg");
+		GMaps.geoLocate();
 	}
 
 	@Override

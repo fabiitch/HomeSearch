@@ -5,7 +5,7 @@ import com.nzt.homesearch.HomeSearchMain;
 import com.nzt.homesearch.assets.AssetsManager;
 import com.nzt.homesearch.screen.MapsScreen;
 
-public class ScreenManager extends AbstractScreenManager<HomeSearchMain> {
+public class ScreenManager extends AbstractScreenManager {
 
 	public static ScreenManager instance = new ScreenManager();
 
@@ -18,6 +18,30 @@ public class ScreenManager extends AbstractScreenManager<HomeSearchMain> {
 	@Override
 	protected void afterSplashScreen() {
 		setScreen(new MapsScreen(mainClass));
+	}
+
+	@Override
+	protected void doPause() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void doResume() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void doResize(int width, int height) {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	protected void doDispose() {
+		// TODO Auto-generated method stub
+		
 	}
 
 }
